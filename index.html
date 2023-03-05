@@ -21,7 +21,8 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <!-- Header -->
@@ -37,7 +38,7 @@
               <a href="./potfolio.html" class="nav-link">Portfolio</a>
             </li>
             <li class="header-item">
-              <a href="" class="nav-link" >Contacts</a>
+              <a href="#" class="nav-link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -57,7 +58,99 @@
           </ul>
         </address>
 
+        <div class="mobile-menu">
+          <button
+            type="button"
+            class="menu-button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="32px" height="22px" aria-label="Menu switch">
+              <use
+                class="menu-icon"
+                href="./images/icons.svg#icon-menu-hamburger"
+              ></use>
+            </svg>
+          </button>
 
+          <div class="header-menu js-menu-container" id="mobile-menu">
+            <div class="menu-container">
+              <div>
+                <button type="button" class="menu-btn-close js-close-menu">
+                  <svg class="close-icon">
+                    <use
+                      class="cross-icon"
+                      href="./images/icons.svg#close-icon"
+                    ></use>
+                  </svg>
+                </button>
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <a href="./index.html" class="menu-link">Studio</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="./potfolio.html" class="menu-link">Portfolio</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link">Contacts</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <address class="menu-address-container">
+                  <ul class="menu-address-list">
+                    <li class="menu-address-item">
+                      <a
+                        href="tel:+110001111111"
+                        class="menu-address-link phone-link"
+                        >+11 (000) 111-11-11</a
+                      >
+                    </li>
+                    <li class="menu-address-item">
+                      <a
+                        href="mailto:info@devstudio.com"
+                        class="menu-address-link"
+                        >info@devstudio.com</a
+                      >
+                    </li>
+                  </ul>
+                </address>
+
+                <ul class="socials-list">
+                  <li class="social-item">
+                    <a href="" class="social-link" aria-label="Instagram">
+                      <svg class="socials-icon">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link" aria-label="Twitter">
+                      <svg class="socials-icon">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link" aria-label="Facebook">
+                      <svg class="socials-icon">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link" aria-label="LinkedIn">
+                      <svg class="socials-icon">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -138,6 +231,10 @@
             <li class="doing-item">
               <img
                 class="doing-img"
+                srcset="
+                  ./images/studio/computer.jpg    1x,
+                  ./images/studio/computer-2x.jpg 2x
+                "
                 src="./images/studio/computer.jpg"
                 alt="Computer"
                 width="360"
@@ -145,18 +242,27 @@
             </li>
             <li class="doing-item">
               <img
-              class="doing-img"
+                class="doing-img"
+                srcset="
+                  ./images/studio/program.jpg    1x,
+                  ./images/studio/program-2x.jpg 2x
+                "
                 src="./images/studio/program.jpg"
                 alt="Programs"
                 width="360"
               />
             </li>
             <li class="doing-item">
-              <img 
-              class="doing-img"
-              src="./images/studio/phone.jpg" 
-              alt="Phone" 
-              width="360" />
+              <img
+                class="doing-img"
+                srcset="
+                  ./images/studio/phone.jpg    1x,
+                  ./images/studio/phone-2x.jpg 2x
+                "
+                src="./images/studio/phone.jpg"
+                alt="Phone"
+                width="360"
+              />
             </li>
           </ul>
         </div>
@@ -170,6 +276,10 @@
             <li class="team-card">
               <img
                 src="./images/studio/mark.jpg"
+                srcset="
+                  ./images/studio/mark.jpg    1x,
+                  ./images/studio/mark-2x.jpg 2x
+                "
                 alt="Photo of Mark"
                 width="264"
               />
@@ -212,6 +322,10 @@
             <li class="team-card">
               <img
                 src="./images/studio/tom.jpg"
+                srcset="
+                  ./images/studio/tom.jpg    1x,
+                  ./images/studio/tom-2x.jpg 2x
+                "
                 alt="Photo of Tom"
                 width="264"
               />
@@ -254,6 +368,10 @@
             <li class="team-card">
               <img
                 src="./images/studio/camila.jpg"
+                srcset="
+                  ./images/studio/camila.jpg    1x,
+                  ./images/studio/camila-2x.jpg 2x
+                "
                 alt="Photo of Camila"
                 width="264"
               />
@@ -296,6 +414,10 @@
             <li class="team-card">
               <img
                 src="./images/studio/daniel.jpg"
+                srcset="
+                  ./images/studio/daniel.jpg    1x,
+                  ./images/studio/daniel-2x.jpg 2x
+                "
                 alt="Photo of Daniel"
                 width="264"
               />
@@ -404,33 +526,33 @@
         <div class="socials-wrap">
           <h3 class="footer-subtitle">Social media</h3>
           <ul class="socials-list">
-            <li class="socials-item">
+            <li class="social-item">
               <a href="" class="social-link" aria-label="Instagram">
-                <svg class="social-icon">
+                <svg class="socials-icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="socials-item">
+            <li class="social-item">
               <a href="" class="social-link" aria-label="Twitter">
-                <svg class="social-icon">
+                <svg class="socials-icon">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="socials-item">
+            <li class="social-item">
               <a href="" class="social-link" aria-label="Facebook">
-                <svg class="social-icon">
+                <svg class="socials-icon">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="socials-item">
+            <li class="social-item">
               <a href="" class="social-link" aria-label="LinkedIn">
-                <svg class="social-icon">
+                <svg class="socials-icon">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -442,13 +564,16 @@
           <b class="footer-subtitle">Subscribe</b>
           <div class="subscribe-form">
             <label for="user-email">
-            <input type="email" placeholder="E-mail" name="user-email" class="subscribe-mail">
-          </label>
+              <input
+                type="email"
+                placeholder="E-mail"
+                name="user-email"
+                class="subscribe-mail"
+              />
+            </label>
             <button type="submit" class="footer-btn">Subscribe</button>
           </div>
         </div>
-        
-      </div>
       </div>
     </footer>
 
@@ -464,70 +589,82 @@
 
         <b class="modal-title">Leave your contacts and we will call you back</b>
 
-          <div class="form-field">
-            <label for="user-name" class="form-label">Name</label>
-            <div class="input-wrap">
-                <input type="name" name="user-name" id="user-name"
-              class="modal-input">
-              <svg class="input-icon person-icon">
-                <use href="./images/icons.svg#icon-user-name"></use>
-              </svg>
-            </div>
+        <div class="form-field">
+          <label for="user-name" class="form-label">Name</label>
+          <div class="input-wrap">
+            <input
+              type="name"
+              name="user-name"
+              id="user-name"
+              class="modal-input"
+            />
+            <svg class="input-icon person-icon">
+              <use href="./images/icons.svg#icon-user-name"></use>
+            </svg>
           </div>
+        </div>
 
-          <div class="form-field">
-            <label for="user-phone" class="form-label">Phone</label>
-            <div class="input-wrap">
-              <input type="tel" name="user-phone" id="user-phone"
-              class="modal-input">
-              <svg class="input-icon">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-            </div>
+        <div class="form-field">
+          <label for="user-phone" class="form-label">Phone</label>
+          <div class="input-wrap">
+            <input
+              type="tel"
+              name="user-phone"
+              id="user-phone"
+              class="modal-input"
+            />
+            <svg class="input-icon">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
           </div>
+        </div>
 
-          <div class="form-field">
-            <label for="user-email" class="form-label">Email</label>
-            <div class="input-wrap">
-              <input type="email" name="user-email" id="user-email"
-              class="modal-input">
-              <svg class="input-icon" >
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-            </div>
+        <div class="form-field">
+          <label for="user-email" class="form-label">Email</label>
+          <div class="input-wrap">
+            <input
+              type="email"
+              name="user-email"
+              id="user-email"
+              class="modal-input"
+            />
+            <svg class="input-icon">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
           </div>
+        </div>
 
-
-          <div class="last-form">
-            <label for="comment" class="form-label">Comment</label>
-            <textarea
-          class="comment"
-          name="comment"
-          id="comment"
-          rows="8"
-          placeholder="Text input"
-        ></textarea>
-          </div>
-        
+        <div class="last-form">
+          <label for="comment" class="form-label">Comment</label>
+          <textarea
+            class="comment"
+            name="comment"
+            id="comment"
+            rows="8"
+            placeholder="Text input"
+          ></textarea>
+        </div>
 
         <div class="policy-wrapper" role="group">
-          
-            <input type="checkbox" name="policy" class="policy-checkbox" id="policy"> 
-            <label class="policy-label" for="policy">
-    
-             <span> I accept the terms and conditions of the  
-             <a href="#" class="policy-link">Privacy Policy</a></span>
-
+          <input
+            type="checkbox"
+            name="policy"
+            class="policy-checkbox"
+            id="policy"
+          />
+          <label class="policy-label" for="policy">
+            <span>
+              I accept the terms and conditions of the
+              <a href="#" class="policy-link">Privacy Policy</a></span
+            >
           </label>
         </div>
-        
 
         <button type="submit" class="modal-send-btn">Send</button>
       </div>
-      
     </div>
 
-    
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
